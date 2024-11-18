@@ -1,0 +1,49 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Student newStudentOne = new Student(1444, "Jeremy", "2000 new world rd");
+		studentList.add(newStudentOne);
+		
+		Student newStudentTwo = new Student(9595, "Rob", "8888 unknown dr");
+		studentList.add(newStudentTwo);
+
+		Student newStudentThree = new Student(3456, "Tony", "8383 new york");
+		studentList.add(newStudentThree);
+
+		
+		Student newStudentFour = new Student(1400, "Barbara", "2777 boston ave");
+		studentList.add(newStudentFour);
+
+		Student newStudentFive = new Student(5888, "Alex", "4832 new Richmond dr");
+		studentList.add(newStudentFive);
+
+		Student newStudentSix = new Student(0001, "Yussif", "2000 new world rd");
+		studentList.add(newStudentSix);
+
+		Student newStudentSeven = new Student(2444, "Hank", "2000 new world rd");
+		studentList.add(newStudentSeven);
+
+		Student newStudentEight = new Student(6777, "Rick", "2000 new world rd");
+		studentList.add(newStudentEight);
+
+		Student newStudentNine = new Student(4777, "Nate", "2000 new world rd");
+		studentList.add(newStudentNine);
+
+		Student newStudentTen = new Student(4666, "Osson", "2000 new world rd");
+		studentList.add(newStudentTen);
+
+
+		
+		SelectionSortMethod selectionsort = new SelectionSortMethod(studentList);
+		
+		selectionsort.selectionSort();
+
+	}
+
+}

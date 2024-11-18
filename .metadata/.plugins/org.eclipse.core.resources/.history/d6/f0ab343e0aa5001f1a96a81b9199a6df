@@ -1,0 +1,23 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Studentarraylistsetup arraylistSetup = new Studentarraylistsetup(studentList);
+		
+		
+
+
+
+
+
+
+
+
+	}
+
+}

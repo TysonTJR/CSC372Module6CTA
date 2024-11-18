@@ -1,0 +1,18 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Studentarraylistsetup listSetup = new Studentarraylistsetup(studentList);
+		
+		SelectionSortMethod selectionsort = new SelectionSortMethod(studentList);
+		
+		System.out.println(selectionsort.findMinIndex());
+
+	}
+
+}

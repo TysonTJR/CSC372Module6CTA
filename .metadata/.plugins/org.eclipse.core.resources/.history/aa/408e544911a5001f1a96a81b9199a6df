@@ -1,0 +1,31 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i;
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Studentarraylistsetup arraylistSetup = new Studentarraylistsetup(studentList);
+		
+		SelectionSortMethod selectionSort = new SelectionSortMethod(studentList);
+		
+				selectionSort.selectionSort();
+				
+				System.out.println("Rollno: " + studentList.get(0).getRollno());
+				
+
+		
+		
+
+
+
+
+
+
+
+	}
+
+}

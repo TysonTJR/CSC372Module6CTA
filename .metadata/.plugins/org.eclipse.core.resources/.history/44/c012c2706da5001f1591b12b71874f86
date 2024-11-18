@@ -1,0 +1,57 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Student newStudentOne = new Student(10, "Jeremy", "2000 new world rd");
+		studentList.add(newStudentOne);
+		
+		Student newStudentTwo = new Student(100, "Rob", "8888 unknown dr");
+		studentList.add(newStudentTwo);
+
+		Student newStudentThree = new Student(300, "Tony", "8383 new york");
+		studentList.add(newStudentThree);
+
+		
+		Student newStudentFour = new Student(11, "Barbara", "2777 boston ave");
+		studentList.add(newStudentFour);
+
+		Student newStudentFive = new Student(1, "Alex", "4832 new Richmond dr");
+		studentList.add(newStudentFive);
+
+		Student newStudentSix = new Student(2, "Yussif", "2000 new world rd");
+		studentList.add(newStudentSix);
+
+		Student newStudentSeven = new Student(50, "Hank", "2000 new world rd");
+		studentList.add(newStudentSeven);
+
+		Student newStudentEight = new Student(96, "Rick", "2000 new world rd");
+		studentList.add(newStudentEight);
+
+		Student newStudentNine = new Student(33, "Nate", "2000 new world rd");
+		studentList.add(newStudentNine);
+
+		Student newStudentTen = new Student(23, "Osson", "2000 new world rd");
+		studentList.add(newStudentTen);
+
+
+		
+		SelectionSortMethod selectionsort = new SelectionSortMethod(studentList);
+		
+		selectionsort.selectionSort();
+		int i;
+		for(i = 0; i <= studentList.size() - 1; i ++) {
+			System.out.println("Roll Number:" + studentList.get(i).getRollno() + " " + "Name:" + studentList.get(i).getName() + " " + "Address:" + studentList.get(i).getAddress());
+		}
+		
+	
+		
+		}
+
+	}
+
+

@@ -1,0 +1,42 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int i;
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		
+		Studentarraylistsetup arraylistSetup = new Studentarraylistsetup(studentList);
+		
+		SelectionSortMethod selectionSort = new SelectionSortMethod(studentList);
+		
+		for(i = 0; i <= studentList.size() -1; i++) {
+			System.out.println("Rollno: " + studentList.get(i).getRollno() + "Name: " + studentList.get(i).getName() + "Address: " + 
+		studentList.get(i).getAddress());
+		}
+		
+		selectionSort.selectionSort();
+		
+		for(i = 0; i <= studentList.size() -1; i++) {
+			System.out.println("Rollno: " + studentList.get(i).getRollno() + "Name: " + studentList.get(i).getName() + "Address: " + 
+		studentList.get(i).getAddress());
+		}
+		
+		for(i = 0; i <= studentList.size() -1; i++) {
+			System.out.println("Rollno: " + studentList.get(i).getRollno() + "Name: " + studentList.get(i).getName() + "Address: " + 
+		studentList.get(i).getAddress());
+		}
+		
+		
+
+
+
+
+
+
+
+	}
+
+}

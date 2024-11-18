@@ -1,0 +1,59 @@
+package csc372module6cta;
+
+import java.util.ArrayList;
+
+public class SelectionSortMethod {
+	ArrayList<Student> studentList;
+	Namecomparator nameComparator = new Namecomparator();
+	Rollnumcomparator rollNumComparator = new Rollnumcomparator();
+	int minNum;
+	int minNumIndex;
+	
+	public SelectionSortMethod(ArrayList<Student> studentList) {
+		this.studentList = studentList;
+		
+	}
+	
+	public void selectionSort() {
+		int j;
+		int i;
+		minNum = studentList.get(0).getRollno();
+		for(i = 0; i <= studentList.size() - 1; i ++) {
+			
+			for(j = 0 + i ; j <= studentList.size() - 1; j++ ) {
+				if(studentList.get(j).getRollno() < minNum) {
+					minNum = studentList.get(j).getRollno();
+				}
+				
+			}
+			Student tempVar = studentList.get(i);
+			studentList.set(i, studentList.get(minNumIndex));
+			studentList.set(minNumIndex, tempVar);
+		}
+		for(i = 0; i<= studentList.size() - 1; i ++) {
+		System.out.println(minNumIndex);
+		}
+		
+	}
+	
+	public void findMinNum() {
+		int i;
+		for(i = 0; i <= studentList.size() - 1; i++) {
+			if(studentList.get(i).getRollno() == minNum) {
+			minNumIndex = i;
+			break;
+			
+			}
+		}
+		
+	}
+	
+	public int getMinNum() {
+		return this.minNum;
+	}
+	
+	public int getMinNumIndex() {
+		return this.minNumIndex;
+	}
+
+}
